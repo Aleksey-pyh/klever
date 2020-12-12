@@ -83,9 +83,10 @@
 .row_item{
     display: flex;
     margin-bottom: 45px;
+    flex-wrap: wrap;
 }
 .item{
-    margin-right: 60px;
+    margin: 10px 60px 10px 0;
 }
 .thirdScreen p {
     max-width: 935px;
@@ -251,4 +252,27 @@ footer a,footer p{
     color: #2F302F;
     text-decoration: none;
     margin: 5px 0;
+}
+@media(max-width:954px){
+    .cardItem{
+        max-width: 100%;
+    }
+    .item{
+        min-width: 25%;
+    }
+}
+@media(max-width:767px){
+    .item {
+        min-width: 41%;
+    }
+}
+@media(max-width:545px){
+    .cardItem{
+        max-width: calc(100% - 30px);
+        padding: 25px 15px;
+        min-height: max-content;
+    }
+    .cardItem h3{
+        width: min-content;
+    }
 }
