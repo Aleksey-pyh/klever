@@ -1,0 +1,254 @@
+.secondScreen{
+    position: relative;
+    padding-bottom: 90px;
+}
+.secondScreen::after{
+    content: '';
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    height: 60%;
+    background-color: #EEEEEE;
+}
+.cardList{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+.cardItem{
+    position: relative;
+    max-width: calc(50% - 90px);
+    width: 100%;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    padding: 25px 40px;
+    margin: 8px 0;
+    min-height: 250px;
+}
+.cardItem::after{
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    background-color: rgba(0,0,0,.45);
+}
+.cardItem h3{
+    font-weight: bold;
+    font-size: 22px;
+    line-height: 21px;
+    color: #FFFFFF;
+    position: relative;
+    z-index: 2;
+    padding-bottom: 6px;
+    border-bottom: 2px solid white;
+    width: max-content;
+}
+.listUl{
+    display: flex;
+}
+.listUl ul{
+    margin: 20px 50px 30px 0;
+}
+.cardItem p{
+    font-size: 14px;
+    color: white;
+    position: relative;
+    z-index: 2;
+}
+.listUl ul li{
+    list-style-type: none;
+    font-weight: normal;
+    font-size: 17px;
+    line-height: 25px;
+    color: #FFFFFF;
+    position: relative;
+    z-index: 2;
+
+}
+.thirdScreen{
+    position: relative;
+    padding-bottom: 60px;
+}
+.thirdScreen::after{
+    content: '';
+    position: absolute;
+    top: 0;
+    right: 0;
+    background-color: #EEEEEE;
+    height: 50%;
+}
+.row_item{
+    display: flex;
+    margin-bottom: 45px;
+}
+.item{
+    margin-right: 60px;
+}
+.thirdScreen p {
+    max-width: 935px;
+}
+.fourScreen{
+    position: relative;
+    padding-bottom: 100px;
+}
+.fourScreen::after{
+    content: '';
+    position: absolute;
+    left: 0;
+    top: 50px;
+    height: 100%;
+    background-color: #EEEEEE;
+}
+.rowWithSlider{
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    position: relative;
+}
+.desc{
+    max-width: 50%;
+}
+.slidersPic{
+    max-width: 50%;
+}
+.desc p{
+    margin-bottom: 20px;
+}
+.rowWithArrow{
+    position: absolute;
+    bottom: 0;
+    width: 50%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.arrowContainer{
+    display: flex;
+}
+.prev,.next,.prevTool,.nextTool{
+    width: 42px;
+    height: 39px;
+    position: relative;
+    background-color: #0B9444;
+}
+.prev{
+    margin-right: 10px;
+}
+.prevTool{
+    margin-right: 20px;
+}
+.prev::after,.next::after,.prevTool::after,.nextTool::after{
+    content: "";
+    position: absolute;
+    width: 5px;
+    height: 5px;
+    top: calc(50% - 3px);
+    
+    transform: rotate(45deg);
+}
+.toolSliderContainer{
+    margin-top: 50px;
+}
+.next::after,.nextTool::after{
+    border-top: 2px solid white;
+    border-right: 2px solid white;
+    left: calc(50% - 4px);
+}
+.prev::after,.prevTool::after{
+    border-left: 2px solid white;
+    border-bottom: 2px solid white;
+    left: calc(50% - 2px);
+}
+.next:hover,.prev:hover,.nextTool:hover,.prevTool:hover{
+    background: #C4C4C4;;
+}
+.arrowContainerTool{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 35px 0 97px;
+}
+.greenButton{
+    padding: 18px 36px;
+    color: #FFFFFF;
+    background-color: #0B9444;
+    border: 2px solid #0B9444;
+    cursor: pointer;
+    outline: none;
+}
+.greenButton:hover{
+    background-color: transparent;
+    color: #0B9444;
+}
+.picContainer{
+    margin-left: 15px;
+    width: calc(100% - 15px);
+}
+.picContainer img{
+    width: 100%;
+}
+.lastWork{
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    margin-bottom: 60px;
+}
+.lastWorkItem{
+    max-width: 23%;
+}
+.lastWorkItem img{
+    width: 100%;
+    object-fit: cover;
+    margin-bottom: 20px;
+}
+.mapContainer{
+    position: relative;
+}
+.dataContainer{
+    position: absolute;
+    padding: 32px 40px;
+    top: 45px;
+    left: 60px;
+    background-color: white;
+    display: flex;
+    justify-content: flex-start;
+    flex-direction: column;
+}
+.dataContainer h3{
+    font-weight: bold;
+    font-size: 20px;
+    line-height: 120.2%;
+    color: #2F302F;
+    margin-bottom: 15px;
+}
+.dataContainer p,.dataContainer a{
+    text-decoration: none;
+    margin:5px 0 ;
+    color: #2F302F;
+}
+.contactBottom a{
+    font-weight: bold;
+}
+footer{
+    padding: 40px 0 14px;
+}
+.row_foot{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+.condef{
+    margin: 5px 15px;
+}
+footer a,footer p{
+    font-weight: normal;
+    font-size: 12px;
+    line-height: 11px;
+    color: #2F302F;
+    text-decoration: none;
+    margin: 5px 0;
+}
