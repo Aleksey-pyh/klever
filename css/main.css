@@ -111,6 +111,8 @@
 }
 .desc{
     max-width: 50%;
+    padding-bottom: 75px;
+    position: relative;
 }
 .slidersPic{
     max-width: 50%;
@@ -121,10 +123,10 @@
 .rowWithArrow{
     position: absolute;
     bottom: 0;
-    width: 50%;
+    width: 100%;
     display: flex;
     justify-content: space-between;
-    align-items: center;
+    align-items: flex-end;
 }
 .arrowContainer{
     display: flex;
@@ -152,6 +154,12 @@
 }
 .toolSliderContainer{
     margin-top: 50px;
+}
+.toolSlide{
+    margin: 15px;
+}
+.toolSlide img{
+    width: 100%;
 }
 .next::after,.nextTool::after{
     border-top: 2px solid white;
@@ -258,12 +266,25 @@ footer a,footer p{
         max-width: 100%;
     }
     .item{
-        min-width: 25%;
+        min-width: calc(33% - 30px);
+        margin: 10px 15px;
     }
 }
-@media(max-width:767px){
-    .item {
-        min-width: 41%;
+@media(max-width:854px){
+    .rowWithSlider{
+        flex-direction: column;
+        align-items: flex-start;
+    }
+    .desc{
+        max-width: 100%;
+    }
+    .slidersPic {
+        max-width: 100%;
+        margin: 20px 0;
+    }
+    .picContainer {
+        margin-left: 0;
+        width: 100%;
     }
 }
 @media(max-width:545px){
@@ -274,5 +295,13 @@ footer a,footer p{
     }
     .cardItem h3{
         width: min-content;
+    }
+    .item{
+        min-width: calc(50% - 30px);
+    }
+}
+@media(max-width:350px){
+    .item{
+        min-width: calc(100% - 30px);
     }
 }
